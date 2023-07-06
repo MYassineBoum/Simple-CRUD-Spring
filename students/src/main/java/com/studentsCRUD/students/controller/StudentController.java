@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import com.studentsCRUD.students.service.StudentService;
 import com.studentsCRUD.students.model.Student;
@@ -25,6 +27,19 @@ public class StudentController {
 		List<Student> liststudents = studentService.listAll();
 		model.addAttribute("liststudents", liststudents);
 		return "all";	
+	}
+	
+	@GetMapping("/new")
+	public String addNewStudent(Model model) {
+		Student newStudent = new Student();
+		model.addAttribute("student", newStudent);
+		return "new";
+	}
+	
+	@PostMapping("/all")
+	public String saveTheNewStudent(@ModelAttribute("student") Student student) {
+		studentService.saveStudent(student);
+		return "redirect:/all";
 	}
 	
 }

@@ -6,11 +6,22 @@
 <head>
 	<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Students Management System</title>
+	<title>Home</title>
+	<link th:href="@{/styles/cssandjs/main.css}" rel="stylesheet" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css"/>
 	<script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<h1>Students Management System</h1>
+	<div class="card text-center justify-content-center" style="width: 800px;">
+		<div class="card-body">
+			<h1>Students Management System</h1>
+			<br>
+			<a th:href="@{/all}">
+					<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+						Open Students List
+					</button>
+			</a>
+		</div>
+	</div>
 </body>
 </html>
