@@ -1,4 +1,4 @@
-# Students Management System using SpringBoot | From scratch.
+# Students Management System using SpringBoot.
 
 ### Possible options (CRUD)
 <ul>
