@@ -1,8 +1,6 @@
-# SpringBoot-CRUD-Management
+# Students Management System using SpringBoot | From scratch.
 
-## Students management system using SpringBoot and MySQL.
-
-### Possible options
+### Possible options (CRUD)
 <ul>
   <li>Add</li>
   <li>Remove | Delete</li>
