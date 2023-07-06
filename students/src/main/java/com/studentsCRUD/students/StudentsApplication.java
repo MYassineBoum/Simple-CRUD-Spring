@@ -23,7 +23,14 @@ public class StudentsApplication {
 	
 	public void run(String... args) throws Exception {
 		
-
+		Student student1=new Student("Yassine", "BOUMEHDI", "myboum.2002@gmail.com", "ENSIAS");
+		studentRepository.save(student1);
+		
+		Student student2=new Student("Ahmed", "IDRISSI", "idrissiahmed@gmail.com", "ENSIAS");
+		studentRepository.save(student2);
+		
+		Student student3=new Student("Hamza", "LACHGAR", "ham.lachgar@gmail.com", "INSEA");
+		studentRepository.save(student3);
 		
 	}
 
