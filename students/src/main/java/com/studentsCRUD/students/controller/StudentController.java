@@ -37,8 +37,8 @@ public class StudentController {
 	}
 	
 	@PostMapping("/all")
-	public String saveTheNewStudent(@ModelAttribute("student") Student student) {
-		studentService.saveStudent(student);
+	public String saveTheNewStudent(@ModelAttribute("student") Student studentNew) {
+		studentService.saveStudent(studentNew);
 		return "redirect:/all";
 	}
 	
