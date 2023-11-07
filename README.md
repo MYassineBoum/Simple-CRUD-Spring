@@ -1,6 +1,6 @@
-# Students Management System using SpringBoot.
+# CRUD using SpringBoot.
 
-### Possible options (CRUD)
+### Possible options
 <ul>
   <li>Add</li>
   <li>Remove | Delete</li>
